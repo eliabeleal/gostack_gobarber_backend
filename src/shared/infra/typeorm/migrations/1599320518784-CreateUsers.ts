@@ -27,6 +27,16 @@ export default class CreateUsers1599320518784 implements MigrationInterface {
             type: 'varchar',
           },
           {
+            name: 'registration',
+            type: 'varchar',
+            isUnique: true,
+          },
+          {
+            name: 'avatar',
+            type: 'varchar',
+            isNullable: true,
+          },
+          {
             name: 'created_at',
             type: 'timestamp',
             default: 'now()',

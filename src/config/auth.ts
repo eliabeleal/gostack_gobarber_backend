@@ -1,6 +1,15 @@
+import { Secret } from 'jsonwebtoken';
+
+interface IJWTConfig {
+  jwt: {
+    secret: Secret;
+    expiresIn: string;
+  };
+}
+
 export default {
   jwt: {
-    secret: 'a8fc2ee1f8d8188e2622d597554301c1',
+    secret: process.env.APP_SECRET || 'default',
     expiresIn: '1d',
   },
-};
+} as IJWTConfig;

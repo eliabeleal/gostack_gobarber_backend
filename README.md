@@ -1,3 +1,67 @@
+# Casdastro de usuário
+
+**RF**
+
+-
+
+**RN**
+
+- O cadastro deve ser realizado pelo adminstrador do sistema;
+- Uma senha temporária deve ser enviada para o novo usuário;
+- No primeiro acesso o usuário deve mudar a senha;
+- A senha deve ter um tempo para expirar, definida pelo adminstrador;
+
+# Coordenadas em tempo real
+
+**RN**
+
+1. As localizações serão filtradas por agências, por região, por área e por quadrante:
+
+* PM - 0 | 2:
+  * CASA MILITAR (CMG)
+* BM - 1
+* PC - 3
+* DETRAN - 4
+* SEAP - 5
+* PRF - 6
+* PREFEITURAS - 7
+  * GCM -
+    * JP
+    * CABEDELO
+    * CONDE
+  * SAMU:
+    * JP -
+    * CG -
+    * CAJAZEIRAS -
+  * SEMOB:
+    * JP
+    * CABEDELO
+* OUTROS - 8:
+* SESDS - 9:
+  * MPE
+  * CIIDS
+  * FUNDAC
+  * GTI
+  * GTA
+  * ZELADORIA
+
+**RNF**
+
+- As localizações serão recebidas do geodevice events por Websocket;
+- As localizações serão repassadas para o front com Socket.io;
+
+**RF**
+
+# Cadastro de funções
+
+**RN**
+
+- O administrador pode criar funções com determinadas permissões;
+- As permissões são para os recursos do sistema;
+
+
+
+
 # Recuperação de senha
 
 **RF**
@@ -29,7 +93,7 @@
 - Para atualizar sua senha, o usuário deve informar a senha antiga;
 - Para atualizar sua senha, o usuário precisa confirmar a nova senha;
 
-# Painel do pretador
+# Painel do prestador
 
 **RF**
 
